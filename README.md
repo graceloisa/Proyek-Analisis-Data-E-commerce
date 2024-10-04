@@ -11,7 +11,7 @@ pip install -r requirements.txt
 1. Clone repository berikut ke komputer lokal dengan menggunakan perintah :
 
    ```
-   git clone https://github.com/graceloisa/Streamlit-proyek-Ecommerce.git
+   git clone https://github.com/graceloisa/Proyek-Analisis-Data-E-commerce.git
    ```
 2. Jangan lupa untuk memiliki lingkungan Python untuk membuka streamlit
 
