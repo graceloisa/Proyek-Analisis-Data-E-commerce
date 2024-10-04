@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
@@ -7,14 +8,18 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 sns.set_context("notebook", font_scale=1.2)
 
+#Mendapatkan direktori saat ini
+current_directory = os.path.dirname(__file__)
+csv_file_path = os.path.join(current_directory, 'all_data.csv')
+
 #Siapkan seluruh DataFrame untuk visualisasi
 
 #Fungsi untuk membuat DataFrame sum order items
 def create_sum_order_items_df(df):
-    sum_order_items_df = df.groupby("product_category_name_english")["product_id"].count().reset_index()
+    sum_order_items_df = df.groupby("product_category_name")["product_id"].count().reset_index()
     sum_order_items_df.rename(columns={
         "product_id": "products",
-        "product_category_name_english":"category"
+        "product_category_name":"category"
     }, inplace=True)
     sum_order_items_df = sum_order_items_df.sort_values(by="products", ascending=False)
 
