@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 numpy==1.26.0
 Babel==2.13.1
 matplotlib==3.8.2
@@ -6,4 +7,14 @@ seaborn==0.13.0
 streamlit==1.28.2
 urllib3==2.1.0
 gdown==4.6.6
+=======
+numpy==1.26.0
+Babel==2.13.1
+matplotlib==3.8.2
+pandas==2.0.3
+seaborn==0.13.0
+streamlit==1.28.2
+urllib3==2.1.0
+gdown==4.6.6
+>>>>>>> 123b5fc48faeb2b679a129361b2c5181cec2f536
 requests==2.31.0
