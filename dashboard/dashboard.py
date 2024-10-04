@@ -53,7 +53,7 @@ def create_rating_summary(df):
     return rating_summary
 
 #Load file all data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 
 #Memanggil helper function yang telah dibuat
 sum_order_items_df = create_sum_order_items_df(all_df)
